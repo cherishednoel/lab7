@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string>
-
 using namespace std;
 
 string func1(string x){
@@ -34,8 +33,17 @@ string func3(string x){
 }
 
 int main(){
-    cout >> "Input text: "
-    cout >> "Reversed text: "
-    cout >> "Palindrome: "
+	string palin;
+    cout << "Input text: ";
+	cin >> palin;
+    cout << "Reversed text: " << func1(palin) << endl;
+
+	string lower = func3(palin);
+	string rlower = func1(lower);
+	if(lower == rlower){
+		cout << "Palindrome: Yes" << endl;
+	} else{
+		cout << "Palindrome: No" << endl;
+	}
     return 0;
 }
