@@ -3,7 +3,6 @@
 using namespace std;
 
 int adiff(int a, int b){
-  int abs(int x);
   int diff = abs(a-b)%360;
   return diff > 180 ? 360-diff : diff;
 }
